@@ -107,7 +107,7 @@ class Hand(object):
 
     def _get_best_hand(self):
         """
-            Returns the best possible hand that can be formed with this hand
+            Returns the best possible type of hand that can be formed with these cards.
         """
         is_flush = self._is_flush_hand()
         is_straight = self._is_straight_hand()
@@ -214,14 +214,14 @@ if __name__ == "__main__":
     cards1 = [
         Card(value=3, suit='H'),
         Card(value=3, suit='S'),
-        Card(value=3, suit='H'),
+        Card(value=9, suit='H'),
         Card(value=11, suit='H'),
-        Card(value=10, suit='H')
+        Card(value=11, suit='H')
     ]
     cards2 = [
         Card(value=3, suit='H'),
         Card(value=3, suit='S'),
-        Card(value=3, suit='H'),
+        Card(value=9, suit='H'),
         Card(value=1, suit='H'),
         Card(value=12, suit='H')
     ]
